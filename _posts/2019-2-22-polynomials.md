@@ -244,6 +244,69 @@ And they're also easy to multiply by numbers:
 
 (15 + 2x) * (3 + 4x) = 45 + 60x + 6x + 8x^2, or (more simply) 45 + 66x + 8x^2
 
+BTW, if you've encountered polynomials before, you might be yelling at me to stop writing them backwards.
+
+I've been doing
+
+15 + 2x + 3x^2
+
+instead of 
+
+3x^2 + 2x + 15
+
+...and that might be annoying. All I can say is:
+
+1. Jeremy Kun does it, and 
+2. It makes code a lot easier
+
+Why do I say it makes code easier? I'll have to digress a minute to explain.
+
+One Minute Digression
+
+15 + 2x + 3x^2
+
+is a polynomial in which the coefficients are 
+
+15, 2, and 3
+
+and the powers of x are 
+
+0, 1, and 2
+
+You might be asking, what do you mean, the powers of x? 
+
+Well, 15 is another way of saying 15 * 1. And 1 is another way of saying x^0, since anything^0 is 1.
+
+No kidding, dumbass!
+
+Here's why that's relevant, though
+
+2x is another way of saying 2 * x^1.
+
+And 3x^2 is another way of saying 3 * x^3.
+
+Do you see the pattern?
+
+We took our first number -- 15 -- and multiplied it by x^0.
+
+We took our second number -- 2 -- and multiplied it by x^1.
+
+We took our third number -- 3 -- and multiplied it by x^2.
+
+Any doubt in your mind what we would do if there were a fourth number in our list?
+
+In fact, it's so self-evident what to do, we could just leave x out of our polynomial altogether:
+
+[15, 2, 3]
+
+...and since programmers think the first item in any list is at Position Zero, this means...
+
+...any programmer would say "The element at position 0 is 15, so we'll multiply it by x^0. The element at position 1 is 2, so we'll multiply it by x^1. The element at position 2 is 2, so we'll multiply it by x^1. And so on."
+
+This is a really lean and elegant way to describe a complicated thing more simply.
+
+End of One Minute Digression
+
 
 
 
