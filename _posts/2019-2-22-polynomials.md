@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Polynomials
+published: true
 ---
 My goal with this post is to get you to say "No kidding, dumbass!" as often as possible.
 
@@ -102,29 +103,148 @@ What's 0/1? Hint: it's the same as 0/10, or 0/777, or 0/1337. It's always 0.
 
 No kidding, dumbass!
 
-Okay, what's "0 times something else"? 0 * 1 is the same as 0 * 5 which is the same as 0 * 1337. It's zero.
-
-No kidding, dumbass!
-
 Let's put these things together, then. 
 
 (Remember, we want 0 if x is 5, and 1 if x is 2.)
 
 function tooSimpleToBeReal(x) {
-  (0 if x is 5) * (1 if x is 2)
+  return x - 5;
 }
 
-I'm fudging the math on this for now. But if that first thing gets a 5, it'll give us a 0, and then we're going to multiply that 0 by whatever the second part is. And we already know it doesn't *matter* what the next part is -- if you multiply it by 0, you're getting 0 back.
+Will this be 0 if x is 5? Let's see:
 
-So giving it a 5 will give us a 0. That's a third of what we need.
+x - 5 = 5 - 5 = 0
 
+Halfway there! And if x is 2, will it be 0?
+
+x - 5 = 2 - 5 = -3
+
+Hmm. We were so close. We need a way to turn this number from -3 to 1. What about adding 4?
+
+function tooSimpleToBeReal(x) {
+  return x - 5 + 4;
+}
+
+But wait, that's the same as 
+
+x - 1
+
+...which is the same thing we did earlier for turning a 2 into a 1. It undoes all the work we did to return 0 if x is 5!
+
+What we need is a way to leave our 0 answer alone (when x is 5) but to change our -3 answer into a 1.
+
+What about multiplication and division?
+
+OK, we have two requirements: don't mess with zero, and turn -3 into 1.
+
+Remember: anything divided by itself is 1.
+
+Remember: 0 / anything = 0
+
+So if there's something we can *divide* our stuff by that will turn -3 to 1, it will be perfect, because it won't wreck our 0. 0/anything is still 0, after all.
+
+So let's try this:
+
+function tooSimpleToBeReal(x) {
+  return (x - 5) / -3;
+}
+
+Why? Because our problem is that we're stuck with -3 when we want 1. If we take that -3 and divide it by -3, we'll have 1. -3/-3 is 1, after all. Problem solved!
+
+If x is 5, we'll have (5 - 5)/ -3, which is 0/-3, which is 0.
+
+If x is 2, we'll have (2 - 5)/ -3, which is -3/-3, which is 1!
+
+But Wait -- There's More
+
+That -3 we're using -- where does that come from? Well, we know that's the "problem number" we got instead of the nice clean 1 we were hoping for.
+
+(x - 5)
+
+..when x is 2.
+
+So here's the funny thing. Sure, we can stick with 
+
+(x - 5)/-3
+
+...and that'll work. But if (x - 5) is another way of saying (2 - 5), couldn't we spell it out as (2 - 5) on the bottom as well?
+
+(x - 5) / (2 - 5)
+
+Well, just looking at that, you can *tell* it's going to be 1 when x is 2. It's the same on top and bottom.
+
+(x - 5) / (2 - 5), when x is 2, is (2 - 5)/(2 - 5)
+
+The huge benefit of doing things this way, instead of (x - 5)/-3, is that it'll work even when x isn't 2. I know, I know, I made it plain that we didn't care about any value of x other than 2 or 5, but this is a twofer: it's obviously gonna give us 1 when we want 1, and it's obviously gonna work whenever we have an x that isn't 5.
+
+It also spells out -- and this isn't a coincidence -- the two x values we care about.
+
+(2 - 5)
+
+There they are -- both of them in the same place.
 
 
 Get to the Point
+
 It turns out what we've been describing is a set of points. Wait, what?
 
 The general idea of a "point" in this context is: "I'll give you an X, and you give me the right Y."
 
 If you're making a point (2, 1) and a point (5, 0), then you're basically saying "I need a function that will take a 2 and give me a 1, and will take a 5 and give me a 0." 
 
-(We're adding the part where numbers other than 5 or 2 give you something that isn't a 1 or a 0, just because that's useful.)
+(We're eventually going to add the part where numbers other than 5 or 2 give you something that isn't a 1 or a 0, just because that's useful.)
+
+And this is where life gets truly interesting. 
+
+We've got a function that will give you a 1 when you give it a 2, and will give you a 0 when you give it a 5. Let's call it turnTwoIntoOne.
+
+What if our points weren't (2, 1) and 5, 0)? What if they were (2, 10) and 5, 0)?
+
+Well, we could take our turnTwoIntoOne and figure out some way to multiply it by 10. 
+
+Then, instead of returning 1 for 2, it would return 10 for 2.
+
+And instead of returning 0 for 5, it would return 10 * 0, which is... still 0.
+
+So all we need to do is come up with an function that gives us 1s when we want 1s, and 0s when we want 0s, and then we can multiply it by whatever we need to in order to get the output we want.
+
+Polynomials
+
+Were you wondering when I'd get back to these? Me, too. 
+
+Anyway, remember that a polynomial is numbers plus some amount of x values plus some kind of exponents (maybe) of x.
+
+15 + 2x 
+
+is a good example of a polynomial.
+
+15 + 2x + 3x^2
+
+is another good example, but we don't even need exponents yet.
+
+One great thing about polynomials is that just by looking at them you can tell that if someone gave you an x, you could give them a number. It's an obvious mathematical formula to get one and only one answer. Airtight.
+
+Another great thing about polynomials is that they're easy to add to each other.
+
+15 + 2x
+
++
+
+22 + 3x
+
+is
+
+37 + 5x
+
+And they're also easy to multiply by numbers:
+
+(15 + 2x) * 2  = 30 + 4x
+
+...or even by other polynomials (if you remember your FOIL):
+
+(15 + 2x) * (3 + 4x) = 45 + 60x + 6x + 8x^2, or (more simply) 45 + 66x + 8x^2
+
+
+
+
+
