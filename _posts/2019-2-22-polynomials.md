@@ -111,8 +111,13 @@ Let's put these things together, then.
 (Remember, we want 0 if x is 5, and 1 if x is 2.)
 
 function tooSimpleToBeReal(x) {
-  (0 if x is 5) + (1 if x is 2)
+  (0 if x is 5) * (1 if x is 2)
 }
+
+I'm fudging the math on this for now. But if that first thing gets a 5, it'll give us a 0, and then we're going to multiply that 0 by whatever the second part is. And we already know it doesn't *matter* what the next part is -- if you multiply it by 0, you're getting 0 back.
+
+So giving it a 5 will give us a 0. That's a third of what we need.
+
 
 
 Get to the Point
