@@ -317,11 +317,11 @@ And $$3\mathrm{x}^2$$ is another way of saying $$3 * \mathrm{x}^3$$.
 
 Do you see the pattern?
 
-We took our first number -- 15 -- and multiplied it by $$\mathrm{x}^0$$.
+We took our first number, 15, and multiplied it by $$\mathrm{x}^0$$.
 
-We took our second number -- 2 -- and multiplied it by $$\mathrm{x}^1$$.
+We took our second number, 2, and multiplied it by $$\mathrm{x}^1$$.
 
-We took our third number -- 3 -- and multiplied it by $$\mathrm{x}^2$$.
+We took our third number, 3, and multiplied it by $$\mathrm{x}^2$$.
 
 Any doubt in your mind what we would do if there were a fourth number in our list?
 
