@@ -48,7 +48,7 @@ function tooSimpleToBeReal(x) {
   if (x == 2 ) {
       return 1;
   }
-  }
+}
 ```
   
   OK, that works, but it's not using any kind of formula that gives us any flexibility. It's pretty useless.
@@ -80,11 +80,14 @@ Let's take it a step closer to the 0 and 1 idea. What if we want it to return a 
 Sure, we could do it with
 
 ```
-if (x == 2 ) {
-      return 1;
-  } else {
+if (x == 2 ) 
+{
+  return 1;
+} 
+  else 
+{
   return 0;
-  }
+}
 ```
   
   ...but the problem there is that it will return 0 for *everything* other than 5. This is fine, unless we kinda want to use this function as a test for both 2 and 5. 
