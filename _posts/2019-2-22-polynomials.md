@@ -52,13 +52,13 @@ Obviously in real life polynomials can take all kinds of values and can return a
 
 I'm a programmer, so I'll make this using a function:
 
-`
+```
 function tooSimpleToBeReal(x) {
   if (x == 2 ) {
       return 1;
   }
 }
-`
+```
   
   OK, that works, but it's not using any kind of formula that gives us any flexibility. It's pretty useless.
   
