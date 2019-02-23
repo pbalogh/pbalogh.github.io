@@ -494,7 +494,11 @@ $$\frac{-22}{3} + \frac{11x}{3}$$
 
 So now, when we give it a 2, we should still get 0. And when we give it a 5, we should get 11.
 
+Let's start by giving it a 2:
+
 $$\frac{-22}{3} + \frac{11 * 2}{3} = \frac{-22}{3} + \frac{22}{3} = 0$$
+
+OK, that worked. Now let's give it a 5:
 
 $$\frac{-22}{3} + \frac{11 * 5}{3} = \frac{-22}{3} + \frac{55}{3} = \frac{33}{3} = 11$$
 
