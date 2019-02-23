@@ -43,19 +43,23 @@ Obviously in real life polynomials can take all kinds of values and can return a
 
 I'm a programmer, so I'll make this using a function:
 
-```function tooSimpleToBeReal(x) {
+```
+function tooSimpleToBeReal(x) {
   if (x == 2 ) {
       return 1;
   }
-  }```
+  }
+  ```
   
   OK, that works, but it's not using any kind of formula that gives us any flexibility. It's pretty useless.
   
   So let's do the same thing with math:
 
-```function tooSimpleToBeReal(x) {
+```
+function tooSimpleToBeReal(x) {
   return x - 1; 
-}```
+}
+```
 
 Does this work? Well, if x is 2, then x - 1 will be 2 - 1, and last time I checked, that's 1.
 
@@ -75,7 +79,8 @@ Let's take it a step closer to the 0 and 1 idea. What if we want it to return a 
 
 Sure, we could do it with
 
-```if (x == 2 ) {
+```
+if (x == 2 ) {
       return 1;
   } else {
   return 0;
@@ -94,9 +99,11 @@ Let's pretend we're playing 20 questions, so we want to get the most information
 
 Let's go back to our math.
 
-```function tooSimpleToBeReal(x) {
+```
+function tooSimpleToBeReal(x) {
   return x - 1; 
-}```
+}
+```
 
 It turns out the key to returning a 0 or 1 is to use fractions.
 
@@ -110,7 +117,8 @@ Let's put these things together, then.
 
 ```function tooSimpleToBeReal(x) {
   return x - 5;
-}```
+}
+```
 
 Will this be 0 if x is 5? Let's see:
 
@@ -147,15 +155,17 @@ So if there's something we can *divide* our stuff by that will turn -3 to 1, it 
 
 So let's try this:
 
+```
 function tooSimpleToBeReal(x) {
   return (x - 5) / -3;
 }
+```
 
 Why? Because our problem is that we're stuck with -3 when we want 1. If we take that -3 and divide it by -3, we'll have 1. -3/-3 is 1, after all. Problem solved!
 
-If x is 5, we'll have (5 - 5)/ -3, which is 0/-3, which is 0.
+If x is 5, we'll have $$\frac{(5 - 5)}{-3}, which is $$\frac{(0)}{-3}, which is 0.
 
-If x is 2, we'll have (2 - 5)/ -3, which is -3/-3, which is 1!
+If x is 2, we'll have $$\frac{(2 - 5)}{-3}, which is $$\frac{-3}{-3}, which is 1!
 
 But Wait -- There's More
 
