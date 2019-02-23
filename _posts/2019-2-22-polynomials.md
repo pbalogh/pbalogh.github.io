@@ -3,25 +3,34 @@ layout: post
 title: Polynomials
 published: true
 ---
-My goal with this post is to get you to say "No kidding, dumbass!" as often as possible.
+My goal with this post is to get you to say this as often as possible:
+
+> No kidding, dumbass!
 
 Ordinarily, this might not seem like a great goal. But while you're saying this to me, I'll be walking through the definition of polynomials from Jeremy Kun's book "A Programmer's Introduction To Mathematics," and by the end, you'll realize that without ever having heard a single non-obvious thing, you've heard an explanation of how to make and use polynomials.
 
 Here's all we need to know about polynomials right now: 
 
-They take a number from us, and give us back a number.
+-They take a number from us, and give us back a number.
 
 Okay, that's too simple. Let's beef it up:
 
-They take a number from us, call it "x", and give us back a number.
+-They take a number from us, call it "x", 
+-and give us back a number.
 
 That's a little better. Here's another step:
 
-They take a number from us, call it "x", and use math on that "x" to give us back a number.
+-They take a number from us, call it "x", 
+-and use math on that "x" to give us back a number.
 
 Still pretty simple. Let's get a tiny bit more specific about the "use math" part:
 
-They take a number, call it x, and return a number that they make by adding things to x and multiplying x by other things and sometimes multiplying x by itself. 
+-They take a number, call it x, 
+-and return a number 
+-that they make by 
+-adding things to x 
+-and multiplying x by other things 
+-and sometimes multiplying x by itself. 
 
 Nothing there that's especially hard to follow, even for me.
 
