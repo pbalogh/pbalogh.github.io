@@ -547,7 +547,9 @@ $$\frac{-47}{3} + \frac{18x}{3}$$
 
 You may have noticed that these polynomials are great at dealing with the two numbers we care about --- 2 and 5 -- and not necessarily good at handling anything else.
 
-Lines vs curves
+## Lines vs curves
+
+1 point -- a lot of different lines can pass through it. A line is a polynomial of degree 1, which is a fancy way of saying there's an x in it but nothing above that -- no x^2, no x^3, etc.
 
 2 points -- you get a line. 
 
