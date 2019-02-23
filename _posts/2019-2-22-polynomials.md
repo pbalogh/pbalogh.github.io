@@ -397,17 +397,17 @@ $$\frac{something - somethingelse}{somethirdthing}$$
 $$\frac{something}{somethirdthing}$$ - $$\frac{somethingelse}{somethirdthing}$$
 
 
-So in the case of $\frac{(x - 2)}{(5 - 2)}$, we can turn that into
+So in the case of $$\frac{(x - 2)}{(5 - 2)}$$, we can turn that into
 
 $$\frac{x}{5 - 2}$$ - $$\frac{2}{5 - 2}$$
 
-....or, if we want to go with the polynomial pattern we set up earlier (e.g., $15 + 2x + 3\mathrm{x}^2$), we could do
+....or, if we want to go with the polynomial pattern we set up earlier (e.g., $$15 + 2x + 3\mathrm{x}^2$$), we could do
 
-$$\frac{-2}{5 - 2}$$ + $$\frac{x}{5 - 2}$$
+$$\frac{-2}{5 - 2} + \frac{x}{5 - 2}$$
 
 And yeah, that could be a whole lot simpler:
 
-$$\frac{-2}{3}$$ + $$\frac{x}{3}$$
+$$\frac{-2}{3} + \frac{x}{3}$$
 
 Why is it good to have a polynomial?
 
