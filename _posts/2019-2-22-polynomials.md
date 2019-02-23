@@ -43,11 +43,11 @@ Obviously in real life polynomials can take all kinds of values and can return a
 
 I'm a programmer, so I'll make this using a function:
 
-function tooSimpleToBeReal(x) {
+`function tooSimpleToBeReal(x) {
   if (x == 2 ) {
       return 1;
   }
-  }
+  }`
   
   OK, that works, but it's not using any kind of formula that gives us any flexibility. It's pretty useless.
   
@@ -67,7 +67,7 @@ tooSimpleToBeReal(5)
 
 is going to give us
 
-5 - 1
+$$5 - 1$$
 
 and that isn't 1, so we've succeeded.
 
@@ -509,8 +509,3 @@ Do they affect each other? Does the 5-polynomial ruin the results of the 2-polyn
 But Wait a Minute
 
 You may have noticed that these polynomials are great at dealing with the two numbers we care about --- 2 and 5 -- and not necessarily good at handling anything else.
-
-
-
-
-
