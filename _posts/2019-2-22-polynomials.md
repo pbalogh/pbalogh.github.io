@@ -355,7 +355,31 @@ But now we have to multiply by 7 to get the right answer (which is (5, 7)). How 
 Step 1: Turn our formula into a polynomial.
 Step 2: Multiply our polynomial by 7, because that's easy to do.
 
+So how do we turn (x - 2)/(5 - 2) into a polynomial?
+
+Well, whenever we have a fraction that's
+
+something - somethingelse
+------------------
+somethirdthing
+
+...remember that we can split it into two fractions:
+
+something                 somethingelse
+---------           -     -----------
+somethirdthing            somethirdthing
 
 
+So in the case of (x - 2)/(5 - 2), we can turn that into
+
+x                 2
+--         -     ---
+5 - 2            5 - 2
+
+....or, if we want to go with the polynomial pattern we set up earlier (e.g., 15 + 2x + 3x^2), we could do
+
+-2            x
+---     +    ---
+5 - 2        5 - 2
 
 
