@@ -47,7 +47,8 @@ I'm a programmer, so I'll make this using a function:
   if (x == 2 ) {
       return 1;
   }
-  }```
+  }
+```
   
   OK, that works, but it's not using any kind of formula that gives us any flexibility. It's pretty useless.
   
@@ -55,7 +56,8 @@ I'm a programmer, so I'll make this using a function:
 
 ```function tooSimpleToBeReal(x) {
   return x - 1; 
-}```
+}
+```
 
 Does this work? Well, if x is 2, then x - 1 will be 2 - 1, and last time I checked, that's 1.
 
@@ -79,7 +81,8 @@ Sure, we could do it with
       return 1;
   } else {
   return 0;
-  }```
+  }
+```
   
   ...but the problem there is that it will return 0 for *everything* other than 5. This is fine, unless we kinda want to use this function as a test for both 2 and 5. 
   
@@ -123,7 +126,8 @@ Hmm. We were so close. We need a way to turn this number from -3 to 1. What abou
 
 ```function tooSimpleToBeReal(x) {
   return x - 5 + 4;
-}```
+}
+```
 
 But wait, that's the same as 
 
