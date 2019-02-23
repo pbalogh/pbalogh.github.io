@@ -43,19 +43,19 @@ Obviously in real life polynomials can take all kinds of values and can return a
 
 I'm a programmer, so I'll make this using a function:
 
-`function tooSimpleToBeReal(x) {
+```function tooSimpleToBeReal(x) {
   if (x == 2 ) {
       return 1;
   }
-  }`
+  }```
   
   OK, that works, but it's not using any kind of formula that gives us any flexibility. It's pretty useless.
   
   So let's do the same thing with math:
 
-function tooSimpleToBeReal(x) {
+```function tooSimpleToBeReal(x) {
   return x - 1; 
-}
+}```
 
 Does this work? Well, if x is 2, then x - 1 will be 2 - 1, and last time I checked, that's 1.
 
@@ -63,7 +63,7 @@ No kidding, dumbass!
 
 OK, it works with our simplest test, but what if we give it a number other than 2?
 
-tooSimpleToBeReal(5)
+```tooSimpleToBeReal(5)```
 
 is going to give us
 
@@ -75,11 +75,11 @@ Let's take it a step closer to the 0 and 1 idea. What if we want it to return a 
 
 Sure, we could do it with
 
-if (x == 2 ) {
+```if (x == 2 ) {
       return 1;
   } else {
   return 0;
-  }
+  }```
   
   ...but the problem there is that it will return 0 for *everything* other than 5. This is fine, unless we kinda want to use this function as a test for both 2 and 5. 
   
