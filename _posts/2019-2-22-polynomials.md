@@ -27,11 +27,11 @@ Nothing there that's especially hard to follow, even for me.
 
 "Multiplying x by itself" is usually called "putting a small number to the right of x called an 'exponent'". So x^2 is another way of saying "x times x", which as a programmer I like to show as "x * x" because my computer keyboard doesn't have a good multiplication symbol. x^2 has 2 for the exponent, and x^3 has 3 for the exponent.
 
-No kidding, dumbass!
+> No kidding, dumbass!
 
 Anyway, polynomials take your x and add some number to it and then multiply it by things and sometimes use various exponents on it as well.
 
-Start Simpler
+## Start Simpler
 
 For me, the easiest way to think about polynomials is not to think about them at all.
 
@@ -112,7 +112,7 @@ It turns out the key to returning a 0 or 1 is to use fractions.
 
 What's 0/1? Hint: it's the same as 0/10, or 0/777, or 0/1337. It's always 0.
 
-No kidding, dumbass!
+> No kidding, dumbass!
 
 Let's put these things together, then. 
 
@@ -201,7 +201,7 @@ $$(2 - 5)$$
 There they are -- both of them in the same place.
 
 
-Get to the Point
+## Get to the Point
 
 It turns out what we've been describing is a set of points. Wait, what?
 
@@ -225,7 +225,7 @@ And instead of returning 0 for 5, it would return 10 * 0, which is... still 0.
 
 So all we need to do is come up with an function that gives us 1s when we want 1s, and 0s when we want 0s, and then we can multiply it by whatever we need to in order to get the output we want.
 
-Polynomials
+## Polynomials
 
 Were you wondering when I'd get back to these? Me, too. 
 
@@ -278,7 +278,7 @@ instead of
 
 Why do I say it makes code easier? I'll have to digress a minute to explain.
 
-One Minute Digression
+## One Minute Digression
 
 15 + 2x + 3x^2
 
@@ -294,7 +294,7 @@ You might be asking, what do you mean, the powers of x?
 
 Well, 15 is another way of saying 15 * 1. And 1 is another way of saying x^0, since anything^0 is 1.
 
-No kidding, dumbass!
+> No kidding, dumbass!
 
 Here's why that's relevant, though
 
@@ -322,7 +322,7 @@ In fact, it's so self-evident what to do, we could just leave x out of our polyn
 
 This is a really lean and elegant way to describe a complicated thing more simply.
 
-End of One Minute Digression
+## End of One Minute Digression
 
 So, getting back to the point: if we've got a polynomial that returns a 1 when we give it 2, and returns a 0 when we give it a 5, we could say it's this:
 
@@ -376,11 +376,12 @@ So how do we turn (x - 2)/(5 - 2) into a polynomial?
 
 Well, whenever we have a fraction that's
 
-something - somethingelse
-------------------
-somethirdthing
+$$\frac{something - somethingelse}{somethirdthing}$$
 
 ...remember that we can split it into two fractions:
+
+
+$$\frac{something}{somethirdthing}$$ - $$\frac{somethingelse}{somethirdthing}$$
 
 something                 somethingelse
 ---------           -     -----------
