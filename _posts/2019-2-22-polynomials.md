@@ -286,6 +286,8 @@ is a polynomial in which the coefficients are
 
 15, 2, and 3
 
+(Coefficients? Yeah, those are the actual numbers you multiply things by. In something like "3x", the coefficient of x is 3.)
+
 and the powers of x are 
 
 0, 1, and 2
