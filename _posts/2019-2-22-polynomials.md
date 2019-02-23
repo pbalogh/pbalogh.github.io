@@ -15,26 +15,28 @@ Here's all we need to know about polynomials right now:
 
 Okay, that's too simple. Let's beef it up:
 
-- They take a number from us, call it "x", 
+- They take a number from us, 
+- call it "x", 
 - and give us back a number.
 
 That's a little better. Here's another step:
 
-- They take a number from us, call it "x", 
+- They take a number from us, 
+- call it "x", 
 - and use math on that "x" to give us back a number.
 
 Still pretty simple. Let's get a tiny bit more specific about the "use math" part:
 
-- They take a number, call it x, 
-- and return a number 
-- that they make by 
+- They take a number, 
+- call it x, 
+- and return a number that they make by 
 - adding things to x 
-- and multiplying x by other things 
+- and sometimes multiplying x by other things 
 - and sometimes multiplying x by itself. 
 
 Nothing there that's especially hard to follow, even for me.
 
-"Multiplying x by itself" is usually called "putting a small number to the right of x called an 'exponent'". So x^2 is another way of saying "x times x", which as a programmer I like to show as "x * x" because my computer keyboard doesn't have a good multiplication symbol. x^2 has 2 for the exponent, and x^3 has 3 for the exponent.
+"Multiplying x by itself" is usually called "putting a small number to the right of x called an 'exponent'". So $\mathrm{x}^2$ is another way of saying "x times x", which programmers type out as "x * x" because computer keyboards don't have a good multiplication symbol. $\mathrm{x}^2$ has 2 for the exponent, and $\mathrm{x}^3$ has 3 for the exponent.
 
 > No kidding, dumbass!
 
@@ -240,11 +242,11 @@ Were you wondering when I'd get back to these? Me, too.
 
 Anyway, remember that a polynomial is numbers plus some amount of x values plus some kind of exponents (maybe) of x.
 
-15 + 2x 
+$15 + 2x$ 
 
 is a good example of a polynomial.
 
-15 + 2x + 3x^2
+$15 + 2x + 3\mathrm{x}^2$
 
 is another good example, but we don't even need exponents yet.
 
@@ -252,33 +254,33 @@ One great thing about polynomials is that just by looking at them you can tell t
 
 Another great thing about polynomials is that they're easy to add to each other.
 
-15 + 2x
+$15 + 2x$
 
 +
 
-22 + 3x
+$22 + 3x$
 
 is
 
-37 + 5x
+$37 + 5x$
 
 And they're also easy to multiply by numbers:
 
-(15 + 2x) * 2  = 30 + 4x
+$(15 + 2x) * 2  = 30 + 4x$
 
 ...or even by other polynomials (if you remember your FOIL):
 
-(15 + 2x) * (3 + 4x) = 45 + 60x + 6x + 8x^2, or (more simply) 45 + 66x + 8x^2
+$(15 + 2x) * (3 + 4x) = 45 + 60x + 6x + 8\mathrm{x}^2$, or (more simply) $45 + 66x + 8\mathrm{x}^2$
 
 BTW, if you've encountered polynomials before, you might be yelling at me to stop writing them backwards.
 
 I've been doing
 
-15 + 2x + 3x^2
+$15 + 2x + 3\mathrm{x}^2$
 
 instead of 
 
-3x^2 + 2x + 15
+$3\mathrm{x}^2 + 2x + 15$
 
 ...and that might be annoying. All I can say is:
 
@@ -289,7 +291,7 @@ Why do I say it makes code easier? I'll have to digress a minute to explain.
 
 ## One Minute Digression
 
-15 + 2x + 3x^2
+$15 + 2x + 3\mathrm{x}^2$
 
 is a polynomial in which the coefficients are 
 
@@ -303,23 +305,23 @@ and the powers of x are
 
 You might be asking, what do you mean, the powers of x? 
 
-Well, 15 is another way of saying 15 * 1. And 1 is another way of saying x^0, since anything^0 is 1.
+Well, 15 is another way of saying 15 * 1. And 1 is another way of saying $\mathrm{x}^0$, since $\mathrm{anything}^0$ is 1.
 
 > No kidding, dumbass!
 
 Here's why that's relevant, though
 
-2x is another way of saying 2 * x^1.
+2x is another way of saying $2 * \mathrm{x}^1$.
 
-And 3x^2 is another way of saying 3 * x^3.
+And $3\mathrm{x}^2$ is another way of saying $3 * \mathrm{x}^3$.
 
 Do you see the pattern?
 
-We took our first number -- 15 -- and multiplied it by x^0.
+We took our first number -- 15 -- and multiplied it by $\mathrm{x}^0$.
 
-We took our second number -- 2 -- and multiplied it by x^1.
+We took our second number -- 2 -- and multiplied it by $\mathrm{x}^1$.
 
-We took our third number -- 3 -- and multiplied it by x^2.
+We took our third number -- 3 -- and multiplied it by $\mathrm{x}^2$.
 
 Any doubt in your mind what we would do if there were a fourth number in our list?
 
@@ -329,7 +331,7 @@ In fact, it's so self-evident what to do, we could just leave x out of our polyn
 
 ...and since programmers think the first item in any list is at Position Zero, this means...
 
-...any programmer would say "The element at position 0 is 15, so we'll multiply it by x^0. The element at position 1 is 2, so we'll multiply it by x^1. The element at position 2 is 2, so we'll multiply it by x^1. And so on."
+...any programmer would say "The element at position 0 is 15, so we'll multiply it by $\mathrm{x}^0$. The element at position 1 is 2, so we'll multiply it by $\mathrm{x}^1$. The element at position 2 is 2, so we'll multiply it by $\mathrm{x}^1$. And so on."
 
 This is a really lean and elegant way to describe a complicated thing more simply.
 
@@ -371,7 +373,7 @@ Let's use the same tricks we came up with earlier to find this polynomial:
 
 Hmm, if we give it 5, we get 3, but we want 1, so we'll do
 
-(x - 2)/(5 - 2)
+$(x - 2)/(5 - 2)$
 
 There we go. This'll give us 
 
@@ -383,7 +385,7 @@ But now we have to multiply by 7 to get the right answer (which is (5, 7)). How 
 Step 1: Turn our formula into a polynomial.
 Step 2: Multiply our polynomial by 7, because that's easy to do.
 
-So how do we turn (x - 2)/(5 - 2) into a polynomial?
+So how do we turn $\frac{(x - 2)}{(5 - 2)}$ into a polynomial?
 
 Well, whenever we have a fraction that's
 
@@ -394,33 +396,31 @@ $$\frac{something - somethingelse}{somethirdthing}$$
 
 $$\frac{something}{somethirdthing}$$ - $$\frac{somethingelse}{somethirdthing}$$
 
-something                 somethingelse
----------           -     -----------
-somethirdthing            somethirdthing
 
+So in the case of $\frac{(x - 2)}{(5 - 2)}$, we can turn that into
 
-So in the case of (x - 2)/(5 - 2), we can turn that into
+$$\frac{x}{5 - 2}$$ - $$\frac{2}{5 - 2}$$
 
-x                 2
---         -     ---
-5 - 2            5 - 2
+....or, if we want to go with the polynomial pattern we set up earlier (e.g., $15 + 2x + 3\mathrm{x}^2$), we could do
 
-....or, if we want to go with the polynomial pattern we set up earlier (e.g., 15 + 2x + 3x^2), we could do
-
--2            x
----     +    ---
-5 - 2        5 - 2
+$$\frac{-2}{5 - 2}$$ + $$\frac{x}{5 - 2}$$
 
 And yeah, that could be a whole lot simpler:
 
--2/3  + x/3
+$$\frac{-2}{3}$$ + $$\frac{x}{3}$$
 
 Why is it good to have a polynomial?
 
 Two reasons:
 
-1. We can multiply this by anything, to turn that 1 (the current output) into anything we want
-2. We can combine it easily with any other polynomial
+1. It's easy to make a polynomial give you something other than 1
+2. It's easy to combine polynomials
+
+One way to do #1 is to multiply the polynomial by a number. It's like scaling a picture up or down, so the kind of number you would use is called a "scalar." Or, as you and I would say, "a number."
+
+To multiply a polynomial by a number, you just multiply all its pieces by that number.
+
+To do #2, you just add all of the pieces together. (More on that in a minute.)
 
 Now we've got two polynomials that are useful.
 
