@@ -168,9 +168,9 @@ function tooSimpleToBeReal(x) {
 
 Why? Because our problem is that we're stuck with -3 when we want 1. If we take that -3 and divide it by -3, we'll have 1. -3/-3 is 1, after all. Problem solved!
 
-If x is 5, we'll have $$\frac{(5 - 5)}{-3}, which is $$\frac{(0)}{-3}, which is 0.
+If x is 5, we'll have $$\frac{(5 - 5)}{-3}$$, which is $$\frac{(0)}{-3}$$, which is 0.
 
-If x is 2, we'll have $$\frac{(2 - 5)}{-3}, which is $$\frac{-3}{-3}, which is 1!
+If x is 2, we'll have $$\frac{(2 - 5)}{-3}$$, which is $$\frac{-3}{-3}$$, which is 1!
 
 But Wait -- There's More
 
@@ -182,15 +182,15 @@ $$(x - 5)$$
 
 So here's the funny thing. Sure, we can stick with 
 
-$$\frac{(x - 5)}{-3}
+$$\frac{(x - 5)}{-3}$$
 
 ...and that'll work. But if $(x - 5)$ is another way of saying $(2 - 5)$, couldn't we spell it out as $(2 - 5)$ on the bottom as well?
 
-$$\frac{(x - 5)}{2 - 5}
+$$\frac{(x - 5)}{2 - 5}$$
 
 Well, just looking at that, you can *tell* it's going to be 1 when x is 2. It's the same on top and bottom.
 
-$$\frac{(x - 5)}{2 - 5}, when x is 2, is $$\frac{(2 - 5)}{2 - 5}
+$$\frac{(x - 5)}{2 - 5}$$, when x is 2, is $$\frac{(2 - 5)}{2 - 5}$$
 
 The huge benefit of doing things this way, instead of (x - 5)/-3, is that it'll work even when x isn't 2. I know, I know, I made it plain that we didn't care about any value of x other than 2 or 5, but this is a twofer: it's obviously gonna give us 1 when we want 1, and it's obviously gonna work whenever we have an x that isn't 5.
 
