@@ -413,10 +413,10 @@ Why is it good to have a polynomial?
 
 Two reasons:
 
-1. It's easy to make a polynomial give you something other than 1
+1. It's easy to multiply a polynomial by something
 2. It's easy to combine polynomials
 
-One way to do #1 is to multiply the polynomial by a number. It's like scaling a picture up or down, so the kind of number you would use is called a "scalar." Or, as you and I would say, "a number."
+Remember how I earlier said you could take a function that returns a 1 or a 0 and "multiply it by 15" to get it to return a 15 or a 0? It's easy to do this if your function happens to be a polynomial, because it's easy to multiply a polynomial by a number. It's like scaling a picture up or down, so if you see something being multiplied by, say, 3, you'll sometimes hear people call that 3 a "scalar," because 3 is the kind of number you can use to scale things. 
 
 To multiply a polynomial by a number, you just multiply all its pieces by that number.
 
@@ -430,8 +430,8 @@ We've got another that can turn 2 into 0, and 5 into 1.
 
 What's great about that? Let's say we want to create a polynomial that gives us these points:
 
-(2, 7)
 (5, 11)
+(2, 7)
 
 We could take the first one (the 5 one) and multiply it by 11.
 
@@ -469,13 +469,15 @@ And if we give it 5, the first part will give us 11 but the second part will giv
 
 Which is exactly what we want!
 
-So let's spell each of our formulae out as polynomials.
+So let's do these steps:
 
-Multiply the first one by 11.
+1. Spell each of our 0-or-1-returning functions out as polynomials.
 
-Multiply the second one by 7.
+2. Multiply the first one by 11.
 
-And add them.
+3. Multiply the second one by 7.
+
+4. And add them.
 
 Here's our 5 function, that produces (5, 1) and 2, 0):
 
@@ -483,12 +485,12 @@ $$\frac{x - 2}{5 - 2}$$
 
 Let's make it a polynomial:
 
-$$\frac{-2}{3}$$ + $$\frac{x}{3}$$
+$$\frac{-2}{3} + \frac{x}{3}$$
 
 
 Now let's multiply it by 11:
 
-$$\frac{-22}{3}$$ + $$\frac{11x}{3}$$
+$$\frac{-22}{3} + \frac{11x}{3}$$
 
 So now, when we give it a 2, we should still get 0. And when we give it a 5, we should get 11.
 
@@ -504,30 +506,38 @@ $$\frac{x - 5}{2 - 5}$$
 
 Let's turn it into a polynomial:
 
-$$\frac{-5}{3}$$ + $$\frac{x}{3}$$
+$$\frac{-5}{3} + \frac{x}{3}$$
 
 ...and then let's multiply it by 7:
 
-$$\frac{-35}{3}$$ + $$\frac{7x}{3}$$
+$$\frac{-35}{3} + \frac{7x}{3}$$
 
 When we give it a 2, we should get 7:
 
--35/3 + 7*2/3 = -35/3 + 14/3 = 21/3 = 7
+$$\frac{-35}{3} + \frac{7 * 2}{3}  =  \frac{-35}{3} + \frac{14}{3} = \frac{21}{3} = 7$$
 
 And when we give it a 5, we should get 0:
 
-
--35/3 + 7*5/3 = -35/3 + 35/3 = 0
+$$\frac{-35}{3} + \frac{7 * 5}{3}  =  \frac{-35}{3} + \frac{35}{3} = \frac{0}{3} = 0$$
 
 
 So when we add them together, does it work? 
 
 Do they affect each other? Does the 5-polynomial ruin the results of the 2-polynomial?
 
--35/3 + 7x/3 + -22/3 + 11x/3
+$$\frac{-35}{3} + \frac{7x}{3} + \frac{-22}{3} + \frac{11x}{3}$$
 
+Let's group the numbers with x at the end:
 
+$$\frac{-35}{3} + \frac{-22}{3} + \frac{7x}{3} + \frac{11x}{3}$$
 
+So we'll add the numbers without x:
+
+$$\frac{-47}{3} + \frac{7x}{3} + \frac{11x}{3}$$
+
+And add the numbers with x:
+
+$$\frac{-47}{3} + \frac{18x}{3}$$
 
 But Wait a Minute
 
