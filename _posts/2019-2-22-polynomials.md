@@ -382,4 +382,47 @@ x                 2
 ---     +    ---
 5 - 2        5 - 2
 
+And yeah, that could be a whole lot simpler:
+
+-2/3  + x/3
+
+Why is it good to have a polynomial?
+
+Two reasons:
+
+1. We can multiply this by anything, to turn that 1 (the current output) into anything we want
+2. We can combine it easily with any other polynomial
+
+Now we've got two polynomials that are useful.
+
+We've got one that can turn 5 into 0, and 2 into 1.
+
+We've got another that can turn 2 into 0, and 5 into 1.
+
+What's great about that? Let's say we want to create a polynomial that gives us these points:
+
+(2, 7)
+(5, 11)
+
+We could take the first one (the 5 one) and multiply it by 11.
+
+We could take the second one (the 2 one) and multiply it by 7).
+
+What would we get if we took the first one (the 5 one, that we multiplied by 11) and gave it 5?
+
+Well, 11, obviously. 1 * 11.
+
+And if we gave it 2? We'd get 0 * 11, or... 0.
+
+What would we get if we took the second one (the 2 one, that we multiplied by 7) and gave it 2?
+
+We'd get 7. 1 * 7 = 7.
+
+And if we gave it 5?
+
+0 * 7 = 0
+
+
+
+
 
