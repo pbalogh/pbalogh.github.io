@@ -349,7 +349,7 @@ Multiply it by 15, and we'll get:
 (2, 15)
 (5, 0)
 
-Welcome to the Upside Down
+## Welcome to the Upside Down
 
 Now imagine a totally different polynomial. This one is:
 
@@ -543,6 +543,14 @@ And add the numbers with x:
 
 $$\frac{-47}{3} + \frac{18x}{3}$$
 
-But Wait a Minute
+## But Wait a Minute
 
 You may have noticed that these polynomials are great at dealing with the two numbers we care about --- 2 and 5 -- and not necessarily good at handling anything else.
+
+Lines vs curves
+
+2 points -- you get a line. 
+
+3rd point -- you need a curve. Unless you're so lucky that the 3rd point happens to be on the line, but let's assume that's like winning the lottery.
+
+Show JKun's picture of the two points and the curves passing through them. There's only one line that can pass through them, but there's an infinite number of curves. Curves happen when you have a polynomial that goes above somenumber + somecoefficient * x and get exponents bigger than 1 on your x terms. 
