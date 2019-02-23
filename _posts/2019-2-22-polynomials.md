@@ -47,8 +47,7 @@ I'm a programmer, so I'll make this using a function:
   if (x == 2 ) {
       return 1;
   }
-  }
-```
+  }```
   
   OK, that works, but it's not using any kind of formula that gives us any flexibility. It's pretty useless.
   
@@ -56,8 +55,7 @@ I'm a programmer, so I'll make this using a function:
 
 ```function tooSimpleToBeReal(x) {
   return x - 1; 
-}
-```
+}```
 
 Does this work? Well, if x is 2, then x - 1 will be 2 - 1, and last time I checked, that's 1.
 
