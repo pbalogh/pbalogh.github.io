@@ -487,7 +487,23 @@ Let's turn it into a polynomial:
 
 -35/3 + 7x/3
 
-When we give it a 2, we should get 
+When we give it a 2, we should get 7:
+
+-35/3 + 7*2/3 = -35/3 + 14/3 = 21/3 = 7
+
+And when we give it a 5, we should get 0:
+
+
+-35/3 + 7*5/3 = -35/3 + 35/3 = 0
+
+
+So when we add them together, does it work? 
+
+Do they affect each other? Does the 5-polynomial ruin the results of the 2-polynomial?
+
+-35/3 + 7x/3 + -22/3 + 11x/3
+
+
 
 
 But Wait a Minute
