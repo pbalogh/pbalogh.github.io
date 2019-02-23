@@ -85,17 +85,17 @@ Sure, we could do it with
   
 Let's pretend we're playing 20 questions, so we want to get the most information we can out of every answer. "Is the number 2?" should give us 1, while "Is the number 5?" should give us a 0, and any other guess should give us a number that isn't 0 and isn't 1.
   
-  tooSimpleToBeReal(2) = 1
+  `tooSimpleToBeReal(2) = 1`
   
-  tooSimpleToBeReal(5) = 0
+  `tooSimpleToBeReal(5) = 0`
   
-  tooSimpleToBeReal(__) = (something that isn't 1 or 0)
+  `tooSimpleToBeReal(__) = (something that isn't 1 or 0)`
 
 Let's go back to our math.
 
-function tooSimpleToBeReal(x) {
+```function tooSimpleToBeReal(x) {
   return x - 1; 
-}
+}```
 
 It turns out the key to returning a 0 or 1 is to use fractions.
 
@@ -107,27 +107,27 @@ Let's put these things together, then.
 
 (Remember, we want 0 if x is 5, and 1 if x is 2.)
 
-function tooSimpleToBeReal(x) {
+```function tooSimpleToBeReal(x) {
   return x - 5;
-}
+}```
 
 Will this be 0 if x is 5? Let's see:
 
-x - 5 = 5 - 5 = 0
+$$x - 5 = 5 - 5 = 0$$
 
 Halfway there! And if x is 2, will it be 0?
 
-x - 5 = 2 - 5 = -3
+$$x - 5 = 2 - 5 = -3$$
 
 Hmm. We were so close. We need a way to turn this number from -3 to 1. What about adding 4?
 
-function tooSimpleToBeReal(x) {
+```function tooSimpleToBeReal(x) {
   return x - 5 + 4;
-}
+}```
 
 But wait, that's the same as 
 
-x - 1
+$$x - 1$$
 
 ...which is the same thing we did earlier for turning a 2 into a 1. It undoes all the work we did to return 0 if x is 5!
 
@@ -139,7 +139,7 @@ OK, we have two requirements: don't mess with zero, and turn -3 into 1.
 
 Remember: anything divided by itself is 1.
 
-Remember: 0 / anything = 0
+Remember: $\frac{0}{anything} = 0$
 
 So if there's something we can *divide* our stuff by that will turn -3 to 1, it will be perfect, because it won't wreck our 0. 0/anything is still 0, after all.
 
