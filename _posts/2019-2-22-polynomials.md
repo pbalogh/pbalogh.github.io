@@ -72,7 +72,7 @@ function tooSimpleToBeReal(x) {
 
 Does this work? Well, if x is 2, then x - 1 will be 2 - 1, and last time I checked, that's 1.
 
-No kidding, dumbass!
+> No kidding, dumbass!
 
 OK, it works with our simplest test, but what if we give it a number other than 2?
 
