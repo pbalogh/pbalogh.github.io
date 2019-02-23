@@ -118,7 +118,8 @@ Let's put these things together, then.
 
 (Remember, we want 0 if x is 5, and 1 if x is 2.)
 
-```function tooSimpleToBeReal(x) {
+```
+function tooSimpleToBeReal(x) {
   return x - 5;
 }
 ```
@@ -133,7 +134,8 @@ $$x - 5 = 2 - 5 = -3$$
 
 Hmm. We were so close. We need a way to turn this number from -3 to 1. What about adding 4?
 
-```function tooSimpleToBeReal(x) {
+```
+function tooSimpleToBeReal(x) {
   return x - 5 + 4;
 }
 ```
@@ -174,21 +176,21 @@ But Wait -- There's More
 
 That -3 we're using -- where does that come from? Well, we know that's the "problem number" we got instead of the nice clean 1 we were hoping for.
 
-(x - 5)
+$$(x - 5)$$
 
 ..when x is 2.
 
 So here's the funny thing. Sure, we can stick with 
 
-(x - 5)/-3
+$$\frac{(x - 5)}{-3}
 
-...and that'll work. But if (x - 5) is another way of saying (2 - 5), couldn't we spell it out as (2 - 5) on the bottom as well?
+...and that'll work. But if $(x - 5)$ is another way of saying $(2 - 5)$, couldn't we spell it out as $(2 - 5)$ on the bottom as well?
 
-(x - 5) / (2 - 5)
+$$\frac{(x - 5)}{2 - 5}
 
 Well, just looking at that, you can *tell* it's going to be 1 when x is 2. It's the same on top and bottom.
 
-(x - 5) / (2 - 5), when x is 2, is (2 - 5)/(2 - 5)
+$$\frac{(x - 5)}{2 - 5}, when x is 2, is $$\frac{(2 - 5)}{2 - 5}
 
 The huge benefit of doing things this way, instead of (x - 5)/-3, is that it'll work even when x isn't 2. I know, I know, I made it plain that we didn't care about any value of x other than 2 or 5, but this is a twofer: it's obviously gonna give us 1 when we want 1, and it's obviously gonna work whenever we have an x that isn't 5.
 
