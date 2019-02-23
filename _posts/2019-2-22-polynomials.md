@@ -184,7 +184,7 @@ So here's the funny thing. Sure, we can stick with
 
 $$\frac{(x - 5)}{-3}$$
 
-...and that'll work. But if $(x - 5)$ is another way of saying $(2 - 5)$, couldn't we spell it out as $(2 - 5)$ on the bottom as well?
+...and that'll work. But if $$(x - 5)$$ is another way of saying $$(2 - 5)$$, couldn't we just spell it out as $$(2 - 5)$$ on the bottom as well?
 
 $$\frac{(x - 5)}{2 - 5}$$
 
@@ -196,7 +196,7 @@ The huge benefit of doing things this way, instead of (x - 5)/-3, is that it'll 
 
 It also spells out -- and this isn't a coincidence -- the two x values we care about.
 
-(2 - 5)
+$$(2 - 5)$$
 
 There they are -- both of them in the same place.
 
