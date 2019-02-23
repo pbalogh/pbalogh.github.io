@@ -307,6 +307,54 @@ This is a really lean and elegant way to describe a complicated thing more simpl
 
 End of One Minute Digression
 
+So, getting back to the point: if we've got a polynomial that returns a 1 when we give it 2, and returns a 0 when we give it a 5, we could say it's this:
+
+(2, 1)
+(5, 0)
+
+If we want to change the output when we get a 2, we can multiply our polynomial by something.
+
+Multiply it by 15, and we'll get:
+
+(2, 15)
+(5, 0)
+
+Welcome to the Upside Down
+
+Now imagine a totally different polynomial. This one is:
+
+(2, 0)
+(5, 7)
+
+That is to say, if we give it a 2, we want it to give us a 0.
+
+And if we give it a 5, we want it to give us a 7.
+
+Well, what we just learned is that we can *start* by coming up with a simpler polynomial:
+
+(2, 0)
+(5, 1)
+
+...and then multiplying it by 7.
+
+Let's use the same tricks we came up with earlier to find this polynomial:
+
+(x - 2)
+
+Hmm, if we give it 5, we get 3, but we want 1, so we'll do
+
+(x - 2)/(5 - 2)
+
+There we go. This'll give us 
+
+(2, 0)
+(5, 1)
+
+But now we have to multiply by 7 to get the right answer (which is (5, 7)). How do we do that?
+
+Step 1: Turn our formula into a polynomial.
+Step 2: Multiply our polynomial by 7, because that's easy to do.
+
 
 
 
