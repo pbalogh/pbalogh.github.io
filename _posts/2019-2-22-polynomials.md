@@ -49,7 +49,7 @@ function tooSimpleToBeReal(x) {
       return 1;
   }
   }
-  ```
+```
   
   OK, that works, but it's not using any kind of formula that gives us any flexibility. It's pretty useless.
   
@@ -67,7 +67,7 @@ No kidding, dumbass!
 
 OK, it works with our simplest test, but what if we give it a number other than 2?
 
-```tooSimpleToBeReal(5)```
+`tooSimpleToBeReal(5)`
 
 is going to give us
 
