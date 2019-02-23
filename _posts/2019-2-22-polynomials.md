@@ -422,6 +422,78 @@ And if we gave it 5?
 
 0 * 7 = 0
 
+Here's the fun part: what happens if we add those two polynomials?
+
+We get a combo polynomial.
+
+Remember: **the goal of our combo polynomial is to give us (2, 7) and (5, 11).**
+
+That is, if we give is 2, we get a 7. If we give it 5, we get 11.
+
+If we give it 2, the first part we put in will give us 0 but the second part will give us 7, so we'd get
+
+0 + 7 = 7
+
+And if we give it 5, the first part will give us 11 but the second part will give us 0, so we'd get 
+
+11 + 0 = 0
+
+Which is exactly what we want!
+
+So let's spell each of our formulae out as polynomials.
+
+Multiply the first one by 11.
+
+Multiply the second one by 7.
+
+And add them.
+
+Here's our 5 function, that produces (5, 1) and 2, 0):
+
+(x - 2)
+-------
+(5 - 2)
+
+Let's make it a polynomial:
+
+-2		  x
+--    +  ---
+3         3
+
+
+Now let's multiply it by 11:
+
+-22/3 + 11x/3
+
+So now, when we give it a 2, we should still get 0. And when we give it a 5, we should get 11.
+
+-22/3 + 11 * 2/3 = -22/3 + 22/3 = 0
+
+-22/3 + 11 * 5/3 = -22/3 + 55/3 = 33/3 = 3
+
+Succcess!
+
+OK, let's look at our 2 function, that produces (2, 1) and (5, 0):
+
+(x - 5)
+-------
+(2 - 5)
+
+Let's turn it into a polynomial:
+
+-5/3 + x/3
+
+...and then let's multiply it by 7:
+
+-35/3 + 7x/3
+
+When we give it a 2, we should get 
+
+
+But Wait a Minute
+
+You may have noticed that these polynomials are great at dealing with the two numbers we care about --- 2 and 5 -- and not necessarily good at handling anything else.
+
 
 
 
