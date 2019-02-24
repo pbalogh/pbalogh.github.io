@@ -547,9 +547,43 @@ $$\frac{-47}{3} + \frac{18x}{3}$$
 
 You may have noticed that these polynomials are great at dealing with the two numbers we care about --- 2 and 5 -- and not necessarily good at handling anything else.
 
+Also, we waited until we had turned both of them into separate polynomials before we did stuff to them. Could we have done it sooner? 
+
+Remember, we multiplied the 2-will-give-us-1 polynomial by 7.
+
+We multiplied the 5-will-give-us-1 polynomial by 11.
+
+Then we added them.
+
+Could we have done that multiplication, and addition, before we made polynomials?
+
+Here's the heart of the 2-will-give-us-1 formula:
+
+$$\frac{x - 5}{2 - 5}$$
+
+Let's multiply it by 7:
+
+$$\frac{7 * (x - 5)}{2 - 5}$$
+
+Here's the heart of the 5-will-give-us-1 formula:
+
+$$\frac{x - 2}{5 - 2}$$
+
+Let's multiply it by 11:
+
+$$\frac{11 * (x - 2)}{5 - 2}$$
+
+(I tend to boil things down into really basic, crude ideas. In this case, I think of the 2-will-give-us-1 as something that "loves" the number 2 and "hates" the number 5. When I think this way, the formula boils down to: "x minus the thing we hate, divided by the thing we love minus the thing we hate." That way, when x is the thing we love, we get $$\frac{something}{itself}$$, or 1. And when x is the thing we hate, we get $$\frac{0}{something}$$, which is 0.)
+
+
+
 ## Lines vs curves
 
 1 point -- a lot of different lines can pass through it. A line is a polynomial of degree 1, which is a fancy way of saying there's an x in it but nothing above that -- no x^2, no x^3, etc.
+
+In fact, you probably were taught the formula for a line: $$y = mx + b$$
+
+...which is a polynomial, in which the coefficient for x is "m" and the coefficient for $$\mathrm{x}^0$$ is b. Remember, $$\mathrm{x}^0$$ is just another way of saying 1, and b is basically the non-x term -- the equivalent of "the number in the ones place."
 
 2 points -- you get a line. 
 
