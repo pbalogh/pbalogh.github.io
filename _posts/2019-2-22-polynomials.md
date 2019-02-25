@@ -579,6 +579,10 @@ Let's multiply it by 7:
 
 $$\frac{7 * (x - 5)}{2 - 5}$$
 
+Simplified:
+
+$$\frac{7x - 35}{-3}$$
+
 Here's the heart of the 5-will-give-us-1 formula:
 
 $$\frac{x - 2}{5 - 2}$$
@@ -589,6 +593,55 @@ $$\frac{11 * (x - 2)}{5 - 2}$$
 
 (I tend to boil things down into really basic, crude ideas. In this case, I think of the 2-will-give-us-1 as something that "loves" the number 2 and "hates" the number 5. When I think this way, the formula boils down to: "x minus the thing we hate, divided by the thing we love minus the thing we hate." That way, when x is the thing we love, we get $$\frac{something}{itself}$$, or 1. And when x is the thing we hate, we get $$\frac{0}{something}$$, which is 0.)
 
+Simplified:
+
+$$\frac{11x - 22}{3}$$
+
+So now that we've done the multiplication, can we add them, and *then* turn them into a polynomial?
+
+$$\frac{7x - 35}{-3} + \frac{11x - 22}{3}$$
+
+Well, the denominators are different (-3 and 3) but we could multiply one of those fractions by $$\frac{-1)}{-1}$$ and solve that. 
+
+(Remember that you can multiply any number by 1 without changing it, and that another way of saying "1" is any fraction that has $$\frac{something}{itself}$$.
+
+So let's switch our fractions around:
+
+$$\frac{11x - 22}{3} + \frac{7x - 35}{-3}$$
+
+...and multiply the second one by -1/-1:
+
+$$\frac{11x - 22}{3} + \frac{-7x + 35}{3}$$
+
+Now we're just doing some addition and subtraction on the top half of our fraction:
+
+$$\frac{11x - 22 -7x + 35}{3}$$
+
+Simplified:
+
+$$\frac{4x - 22 + 35}{3}$$
+
+And more:
+
+$$\frac{4x + 13}{3}$$
+
+So we can turn this into a polynomial by splitting this one fraction into two fractions: a numbers-only fraction and a-fraction-that-has-x:
+
+$$\frac{4x}{3} + \frac{13}{3}$$
+
+Now switch the order because that's the way we like our polynomials:
+
+$$\frac{13}{3} + \frac{4x}{3}$$
+
+What happens when we give it 2?
+
+$$\frac{13}{3} + \frac{4 * 2}{3} = \frac{13}{3} + \frac{8}{3} = \frac{21}{3} = 7$$
+
+Good! And 5?
+
+$$\frac{13}{3} + \frac{4 * 5}{3} = \frac{13}{3} + \frac{20}{3} = \frac{33}{3} = 11$$
+
+Good! It worked.
 
 ## Mind the Pattern
 
@@ -605,6 +658,8 @@ For example, let's say you want to make sure you return a 0 for 13 as well as fo
 $$\frac{(x - 5)(x - 13)}{(5 - 2)(13 - 2)}$$
 
 The interesting thing is, multiplying (x - 5) by (x - 13) isn't just simple arithmetic anymore -- you need to use FOIL to do it, and your answer is going to wind up with $$\mathrm{x}^2$$ in there. But we're okay with that! We're already working with polynomials. So far our polynomials have just been "degree one" polynomials" (meaning that they contain x but not $$\mathrm{x}^2$$ or $$\mathrm{x}^3$$). Now we're expanding a tiny bit.
+
+The question is: what changes when you have exponents like $$\mathrm{x}^2$$ in your polynomial?
 
 ## Lines vs curves
 
