@@ -533,7 +533,7 @@ So when we add them together, does it work?
 
 Do they affect each other? Does the 5-polynomial ruin the results of the 2-polynomial?
 
-$$\frac{35}{3} - \frac{7x}{3} + \frac{-22}{3} + \frac{11x}{3}$$
+$$\frac{35}{3} - \frac{7x}{3} - \frac{22}{3} + \frac{11x}{3}$$
 
 Let's group the numbers with x at the end:
 
@@ -549,7 +549,13 @@ $$\frac{13}{3} + \frac{4x}{3}$$
 
 Let's test it. What happens if we give it a 2?
 
-$$\frac{-47}{3} + \frac{18 * 2}{3} = \frac{-47}{3} + \frac{36}{3} = \frac{-11}{3}$$
+$$\frac{13}{3} + \frac{4 * 2}{3} = \frac{13}{3} + \frac{8}{3} = \frac{21}{3} = 7$$
+
+And if we give it a 5?
+
+$$\frac{13}{3} + \frac{4 * 5}{3} = \frac{13}{3} + \frac{20}{3} = \frac{33}{3} = 11$$
+
+It works!
 
 ## But Wait a Minute
 
