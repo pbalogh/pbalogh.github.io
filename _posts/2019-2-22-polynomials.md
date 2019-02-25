@@ -234,7 +234,7 @@ Then, instead of returning 1 for 2, it would return 10 for 2.
 
 And instead of returning 0 for 5, it would return 10 * 0, which is... still 0.
 
-So all we need to do is come up with an function that gives us 1s when we want 1s, and 0s when we want 0s, and then we can multiply it by whatever we need to in order to get the output we want.
+So all we need to do is come up with some function that gives us 1s when we want 1s, and 0s when we want 0s, and then we can multiply it by whatever we need to in order to get the output we want.
 
 ## Polynomials
 
