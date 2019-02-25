@@ -590,7 +590,7 @@ For example, let's say you want to make sure you return a 0 for 13 as well as fo
 
 $$\frac{(x - 5)(x - 13)}{(5 - 2)(13 - 2)}$$
 
-The interesting thing is, multiplying (x - 5) by (x - 13) isn't just arithmetic anymore -- you need to use FOIL to do it, and your answer is going to wind up with $$\mathrm{x}^2$$ in there. But we're okay with that! We're already working with polynomials. So far our polynomials have just been "degree one" polynomials" (meaning that they contain x but not $$\mathrm{x}^2$$ or $$\mathrm{x}^3$$). Now we're expanding a tiny bit.
+The interesting thing is, multiplying (x - 5) by (x - 13) isn't just simple arithmetic anymore -- you need to use FOIL to do it, and your answer is going to wind up with $$\mathrm{x}^2$$ in there. But we're okay with that! We're already working with polynomials. So far our polynomials have just been "degree one" polynomials" (meaning that they contain x but not $$\mathrm{x}^2$$ or $$\mathrm{x}^3$$). Now we're expanding a tiny bit.
 
 ## Lines vs curves
 
