@@ -510,7 +510,11 @@ $$\frac{x - 5}{2 - 5}$$
 
 Let's turn it into a polynomial:
 
-$$\frac{-5}{3} + \frac{x}{3}$$
+$$\frac{-5}{-3} + \frac{x}{-3}$$
+
+Cleaned up:
+
+$$\frac{5}{3} - \frac{x}{3}$$
 
 ...and then let's multiply it by 7:
 
@@ -542,6 +546,10 @@ $$\frac{-47}{3} + \frac{7x}{3} + \frac{11x}{3}$$
 And add the numbers with x:
 
 $$\frac{-47}{3} + \frac{18x}{3}$$
+
+Let's test it. What happens if we give it a 2?
+
+$$\frac{-47}{3} + \frac{18 * 2}{3} = \frac{-47}{3} + \frac{36}{3} = \frac{-11}{3}$$
 
 ## But Wait a Minute
 
