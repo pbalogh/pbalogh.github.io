@@ -576,6 +576,21 @@ $$\frac{11 * (x - 2)}{5 - 2}$$
 (I tend to boil things down into really basic, crude ideas. In this case, I think of the 2-will-give-us-1 as something that "loves" the number 2 and "hates" the number 5. When I think this way, the formula boils down to: "x minus the thing we hate, divided by the thing we love minus the thing we hate." That way, when x is the thing we love, we get $$\frac{something}{itself}$$, or 1. And when x is the thing we hate, we get $$\frac{0}{something}$$, which is 0.)
 
 
+## Mind the Pattern
+
+In general, when we're making our fractions for the something-will-give-us-1 formula, you can see this taking shape:
+
+$$\frac{x - some X value we hate}{the X value we love - that X value we hated up above}$$
+
+Note that since we're using actual x values on the bottom, like 2 and 5, and we never subtract anything from itself, there's no way we'll wind up with a 0 on the bottom -- which would definitely be a risk if we left X in there as a variable. (x - 5 can very definitely be 0 if someone sneaks a 5 in for X.)
+
+A fun thought that will pay off: remember that 0 * anything is 0. So if you want the top of your fraction to turn to 0 for more than one X, just make sure you have (X - that thing you hate) on the top of your fraction, being multiplied by the rest of the things up there.
+
+For example, let's say you want to make sure you return a 0 for 13 as well as for 5. No problem! Just do
+
+$$\frac{(x - 5)(x - 13)}{(5 - 2)(13 - 2)}$$
+
+The interesting thing is, multiplying (x - 5) by (x - 13) isn't just arithmetic anymore -- you need to use FOIL to do it, and your answer is going to wind up with $$\mathrm{x}^2$$ in there. But we're okay with that! We're already working with polynomials. So far our polynomials have just been "degree one" polynomials" (meaning that they contain x but not $$\mathrm{x}^2$$ or $$\mathrm{x}^3$$). Now we're expanding a tiny bit.
 
 ## Lines vs curves
 
@@ -589,4 +604,4 @@ In fact, you probably were taught the formula for a line: $$y = mx + b$$
 
 3rd point -- you need a curve. Unless you're so lucky that the 3rd point happens to be on the line, but let's assume that's like winning the lottery.
 
-Show JKun's picture of the two points and the curves passing through them. There's only one line that can pass through them, but there's an infinite number of curves. Curves happen when you have a polynomial that goes above somenumber + somecoefficient * x and get exponents bigger than 1 on your x terms. 
+Show JKun's picture of the two points and the curves passing through them. There's only one line that can pass through them, but there's an infinite number of curves. Curves happen when you have a polynomial that goes above somenumber + somecoefficient * x and get exponents bigger than 1 on your x terms.
