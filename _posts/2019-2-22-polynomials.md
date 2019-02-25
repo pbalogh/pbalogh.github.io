@@ -518,34 +518,34 @@ $$\frac{5}{3} - \frac{x}{3}$$
 
 ...and then let's multiply it by 7:
 
-$$\frac{-35}{3} + \frac{7x}{3}$$
+$$\frac{35}{3} - \frac{7x}{3}$$
 
 When we give it a 2, we should get 7:
 
-$$\frac{-35}{3} + \frac{7 * 2}{3}  =  \frac{-35}{3} + \frac{14}{3} = \frac{21}{3} = 7$$
+$$\frac{35}{3} - \frac{7 * 2}{3}  =  \frac{35}{3} - \frac{14}{3} = \frac{21}{3} = 7$$
 
 And when we give it a 5, we should get 0:
 
-$$\frac{-35}{3} + \frac{7 * 5}{3}  =  \frac{-35}{3} + \frac{35}{3} = \frac{0}{3} = 0$$
+$$\frac{35}{3} - \frac{7 * 5}{3}  =  \frac{35}{3} - \frac{35}{3} = \frac{0}{3} = 0$$
 
 
 So when we add them together, does it work? 
 
 Do they affect each other? Does the 5-polynomial ruin the results of the 2-polynomial?
 
-$$\frac{-35}{3} + \frac{7x}{3} + \frac{-22}{3} + \frac{11x}{3}$$
+$$\frac{35}{3} - \frac{7x}{3} + \frac{-22}{3} + \frac{11x}{3}$$
 
 Let's group the numbers with x at the end:
 
-$$\frac{-35}{3} + \frac{-22}{3} + \frac{7x}{3} + \frac{11x}{3}$$
+$$\frac{35}{3} - \frac{22}{3} - \frac{7x}{3} + \frac{11x}{3}$$
 
 So we'll add the numbers without x:
 
-$$\frac{-47}{3} + \frac{7x}{3} + \frac{11x}{3}$$
+$$\frac{13}{3} - \frac{7x}{3} + \frac{11x}{3}$$
 
 And add the numbers with x:
 
-$$\frac{-47}{3} + \frac{18x}{3}$$
+$$\frac{13}{3} + \frac{4x}{3}$$
 
 Let's test it. What happens if we give it a 2?
 
