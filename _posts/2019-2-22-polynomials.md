@@ -659,6 +659,10 @@ $$\frac{(x - 5)(x - 13)}{(5 - 2)(13 - 2)}$$
 
 The interesting thing is, multiplying (x - 5) by (x - 13) isn't just simple arithmetic anymore -- you need to use FOIL to do it, and your answer is going to wind up with $$\mathrm{x}^2$$ in there. But we're okay with that! We're already working with polynomials. So far our polynomials have just been "degree one" polynomials" (meaning that they contain x but not $$\mathrm{x}^2$$ or $$\mathrm{x}^3$$). Now we're expanding a tiny bit.
 
+## Chinese Remainders
+
+There's a formula that we're getting really, really close to, and it's very similar to an old math puzzle that has one of the most simple-once-you-know-it-but-impossible-otherwise answers imaginable. It's really satisfying to learn -- sort of like the ancient Babylonian square-root-finding formula that Newton apparently loved.
+
 The question is: what changes when you have exponents like $$\mathrm{x}^2$$ in your polynomial?
 
 ## Lines vs curves
@@ -674,3 +678,7 @@ In fact, you probably were taught the formula for a line: $$y = mx + b$$
 3rd point -- you need a curve. Unless you're so lucky that the 3rd point happens to be on the line, but let's assume that's like winning the lottery.
 
 Show JKun's picture of the two points and the curves passing through them. There's only one line that can pass through them, but there's an infinite number of curves. Curves happen when you have a polynomial that goes above somenumber + somecoefficient * x and get exponents bigger than 1 on your x terms.
+
+Also -- it's all about adding curves, to an extent. 
+
+Like Fourier synthesis!
