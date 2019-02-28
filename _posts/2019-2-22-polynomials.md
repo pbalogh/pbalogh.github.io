@@ -445,7 +445,7 @@ And if we gave it 2? We'd get 0 * 11, or... 0.
 
 What would we get if we took the second one (the 2 one, that we multiplied by 7) and gave it 2?
 
-We'd get 7. 1 * 7 = 7.
+We'd get 7, because 1 * 7 = 7.
 
 And if we gave it 5?
 
@@ -662,6 +662,10 @@ The interesting thing is, multiplying (x - 5) by (x - 13) isn't just simple arit
 ## Chinese Remainders
 
 There's a formula that we're getting really, really close to, and it's very similar to an old math puzzle that has one of the most simple-once-you-know-it-but-impossible-otherwise answers imaginable. It's really satisfying to learn -- sort of like the ancient Babylonian square-root-finding formula that Newton apparently loved.
+
+(Explain the Chinese Remainders puzzle here)
+
+So that's very similar to what we're doing when we were setting up our functions to return 1 for the "good" x and 0 for every "bad" x. And it's even *more* similar when we multiply the stuff inside those functions so that instead of returning 1 they return something like 7 or 11.
 
 The question is: what changes when you have exponents like $$\mathrm{x}^2$$ in your polynomial?
 
