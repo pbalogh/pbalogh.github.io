@@ -689,13 +689,64 @@ There's a formula that we're getting really, really close to, and it's very simi
 
 The puzzle is something like this...
 
-We're looking for a number. If you divide this number by 5, you'll get a remainder of 2.
+We're looking for a number. If you divide this number by 5, you'll get a remainder of 3.
 
-If you divide it by 7, you'll get a remainder of 3.
+If you divide it by 7, you'll get a remainder of 4.
 
-So something like 12 would work well for the first part (12 / 5 is 2 with a remainder of 2) but lousy for the second part (because 12 / 7 is 1 with a remainder of 5).
+So something like 8 would work well for the first part (8 / 5 is 1 with a remainder of 3) but lousy for the second part (because 8 / 7 is 1 with a remainder of 1).
 
-How do we find this number?
+How do we find a number that gives us the remainders we want?
+
+## We Sorta Did This Already
+
+Let's say you want a get-remainder-of-1 function. Like our earliest functions above, this one should have some number of things being added, but all of them should be 0 except for one of them which is 1.
+
+So when we give it a 5, we'll get
+
+(fraction that will be 1) + (fraction that will be 0)
+
+And when we give it a 7, we'll get
+
+(fraction that will be 0) + (fraction that will be 1)
+
+And just like before, when we don't want just a 1, we multiply our formula by, well, whatever we actually want to get out of it.
+
+For 5, we wanted a remainder of 3, so:
+
+Formula for 5 = 3 * (remainderAfterDividingBy5 + remainderAfterDividingBy7)
+
+...in which remainderAfterDividingBy5 is 1 and remainderAfterDividingBy7 is 0.
+
+Just like above: take any number that has a remainderAfterDividingBy7 of 0 (say, 14). Multiply it by any integer and it'll still have a remainder of 0 after dividing by 7. Try it: 14 * 2 = 28. Why? Because the "remainder of 0" part means "it's made of sevens." 
+
+## Bad Metaphor Alert
+
+If the only Lego blocks you have are the ones with 6 nubbins, and you start lining them up, you can't made anything smaller than 6 nubbins, and you can't make anything *between* sizes of 6, 12, 18, etc. 
+
+The number 14 has a remainder of 0 after you divide it by 7 because it's *made* of sevens. Multiply 14 by something else and you're just making a longer row of sevens, but you're not putting anything in there smaller than 7 (since as far as remainders are concerned, 14 is just a pair of sevens).
+
+## Back to the Formula
+
+So any number that has a remainder of 0 after dividing it by 7 is going to stay that way if you multiply it by 2. 
+
+What's nice is that any number with a remainder of *1* after dividing it by 5 is going to have a remainder of *2* after you multiply it by 2. 
+
+Try it: 6 has a remainder of 1 after dividing it by 5. 6 * 2 = 12. 12 has a remainder of 2.
+
+So if we found a number with a remainder of 1 after dividing it by 5, and a remainder of 0 after dividing it by 7, we could multiply that number by 2 and we'd be all set.
+
+
+
+
+...in which the first part, the "1", is "the remainder after you divide our number by 5" and the second part, the "0", 
+
+For 7, we wanted a remainder of 3, so:
+
+Formula for 7 = 3 * ((fraction that will be 0) + (fraction that will be 1))
+
+## How to Make a Zero Remainder
+
+For our 5 formula, we need something that gives a remainder of zero
 
 ## We Already Have the Answer
 
@@ -714,6 +765,8 @@ Well, you could always just add 5, right? That won't affect the remainder, will 
 And now this starts to feel like common sense. If what you're adding is 5 * 1 or 5 * 2 or 5 * (any integer), you can't possibly be messing with the remainder.
 
 > No kidding, dumbass!
+
+
 
 Answer = something * 5 + 2
 
