@@ -727,16 +727,49 @@ The number 14 has a remainder of 0 after you divide it by 7 because it's *made* 
 
 ## Back to the Formula
 
-So any number that has a remainder of 0 after dividing it by 7 is going to stay that way if you multiply it by 2. 
+So any number that has a remainder of 0 after dividing it by 7 is going to stay that way if you multiply it by 3. 
 
-What's nice is that any number with a remainder of *1* after dividing it by 5 is going to have a remainder of *2* after you multiply it by 2. 
+What's nice is that any number with a remainder of *1* after dividing it by 5 is going to have a remainder of *3* after you multiply it by 3. 
 
-Try it: 6 has a remainder of 1 after dividing it by 5. 6 * 2 = 12. 12 has a remainder of 2.
+Try it: 6 has a remainder of 1 after dividing it by 5. 6 * 3 = 18. 18 divided by 5 has a remainder of 3.
 
-So if we found a number with a remainder of 1 after dividing it by 5, and a remainder of 0 after dividing it by 7, we could multiply that number by 2 and we'd be all set.
+So if we found a number with a remainder of 1 after dividing it by 5, and a remainder of 0 after dividing it by 7, we could multiply that number by 3 and we'd be all set.
 
+## Finding Zero-Remainder Numbers
 
+A number that has a remainder of 0 when you divide it by 7 is a number that's made of sevens. (Think of the Lego blocks.) 7 * 1, maybe, or 7 * 2, or, well, 7 * anything. They'll all work.
 
+Call this number 7x.
+
+What we need is a case where 7x has a remainder of 1 when divided by 5.
+
+7 * 1 (or 7) has a remainder of 2 as far as 5 is concerned. 
+
+7 * 2 (or 14) has a remainder of 4 as far as 5 is concerned. 
+
+Wanna bet 7 * 3 has a remainder of 6 as far as 5 is concerned?
+
+7 * 3 = 21, which after dividing by 5 has a remainder of... 1.
+
+Well, it turns out it *does* have a remainder of 6, but 6 is actually bigger than 5, so your remainder has gotten bigger than the Lego blocks it's supposed to be the remainder of! And that's fine. Just add another 5-block. For 7 * 2 (or 14) we used 2 of our 5-blocks to get 10, with a remainder of 4. For 7 * 3, we thought we were going to be able to just add another 5-block (to get 15), but it turns out that the "21 has a remainder of 6 when dividing by 5" part means your remainder is too big, which means 15 isn't big enough, so you need to add another 5-block. Which gets you to 20, and then you can see the remainder is 1.
+
+Remainder of 6 really means remainder of 1, when you're dividing by 5.
+
+It's kinda like... we know the remainder will be 1 (after dividing by 5) if the remainder is 1, 6, 11, etc. Or... *any number that itself has a remainder of 1 after dividing by 5.*
+
+## Build the Formula
+
+So 7 * 3 has a remainder of 0 after dividing by 7...
+
+> No kidding, dumbass!
+
+...and a remainder of 1 after dividing by 5. Perfect! Multiply it by 3 and we're halfway there!
+
+7 * 3 * 3 = 63
+
+It checks out: remainder of 0 for 7, remainder of 3 for 5.
+
+Our answer = 3 * (numberThatHasRemainder1for5and0For7) + 
 
 ...in which the first part, the "1", is "the remainder after you divide our number by 5" and the second part, the "0", 
 
