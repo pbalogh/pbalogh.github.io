@@ -597,6 +597,8 @@ Simplified:
 
 $$\frac{11x - 22}{3}$$
 
+## Put Them Together First
+
 So now that we've done the multiplication, can we add them, and *then* turn them into a polynomial?
 
 $$\frac{7x - 35}{-3} + \frac{11x - 22}{3}$$
@@ -659,11 +661,69 @@ $$\frac{(x - 5)(x - 13)}{(5 - 2)(13 - 2)}$$
 
 The interesting thing is, multiplying (x - 5) by (x - 13) isn't just simple arithmetic anymore -- you need to use FOIL to do it, and your answer is going to wind up with $$\mathrm{x}^2$$ in there. But we're okay with that! We're already working with polynomials. So far our polynomials have just been "degree one" polynomials" (meaning that they contain x but not $$\mathrm{x}^2$$ or $$\mathrm{x}^3$$). Now we're expanding a tiny bit.
 
+Also, we've moved a little bit ahead of where we started. Remember that we used to have functions that returned 1s or 0s. 
+
+Really, under the hood, they were just fractions that put an x - something up top in the numerator.
+
+Now we're multiplying the numerator by some constant -- some number like 7 or 11 -- so that instead of returning 1s and 0s, it'll return some-number-we-like or 0.
+
+This pattern is important for a few reasons. One is that it's so clean and simple conceptually, and the other is that it can easily be expanded to have more numbers we love or hate.
+
+myFunction(x) = 7 * (fraction that will be 1 or 0) + 11 * (fraction that will be 1 or 0) + ....
+
+You can keep adding "+ some Y we want for a particular number * (fraction that will be 1 or 0)", and as long as that fraction is 1 when it's supposed to be, and 0 for the other X's we care about, we'll get that Y back from our function. 
+
+So if someone told us that (6, 8) should be a point in our graph, or is part of our data set (and that data set can be basically anything, because numbers can represent basically anything in the world now that everything is being digitized), we can add it easily.
+
+myFunction = 7 * (firstFraction) + 11 * (otherFraction) + 8 * (newFraction)
+
+newFraction should be 1 when X is 6, so that we'll get 8 * 1. And we just have to make sure that firstFraction and otherFraction are 0 when X is 6, because we don't want to pollute our nice 8 with any of that 7 and 11 stuff. 
+
+Which is easy, because as long as the numerators of firstFraction and otherFraction are being multiplied by (X - 6) we can guarantee that those fractions will be 0 when X is 6. 
+
+We just have to make sure the denominators also contain 2 - 6 (for firstFraction) and 5 - 6 (for otherFraction) so that they'll be the same on the top and bottom when X is 2 (for firstFraction) and 5 (for otherFraction).
+
 ## Chinese Remainders
 
 There's a formula that we're getting really, really close to, and it's very similar to an old math puzzle that has one of the most simple-once-you-know-it-but-impossible-otherwise answers imaginable. It's really satisfying to learn -- sort of like the ancient Babylonian square-root-finding formula that Newton apparently loved.
 
-(Explain the Chinese Remainders puzzle here)
+The puzzle is something like this...
+
+We're looking for a number. If you divide this number by 5, you'll get a remainder of 2.
+
+If you divide it by 7, you'll get a remainder of 3.
+
+So something like 12 would work well for the first part (12 / 5 is 2 with a remainder of 2) but lousy for the second part (because 12 / 7 is 1 with a remainder of 5).
+
+How do we find this number?
+
+## We Already Have the Answer
+
+...or at least the tools that will find the answer.
+
+Let's focus on the "when you divide by 5, you'll get a remainder of 2" part.
+
+If someone came to you and said "I have a number that solves this! It's a 7 (or 12, or some other valid answer). But I'm being told I have to add something to it, and I don't want to break the remainder-of-2 part. What can I add that won't affect the remainder when I divide by 5?"
+
+Well, you could always just add 5, right? That won't affect the remainder, will it?
+
+7 + 5 = 12, which is still remainder 2. 
+
+12 + 5 = 17, which is still remainder 2.
+
+And now this starts to feel like common sense. If what you're adding is 5 * 1 or 5 * 2 or 5 * (any integer), you can't possibly be messing with the remainder.
+
+> No kidding, dumbass!
+
+Answer = something * 5 + 2
+
+So what's that something?
+
+Well, it can be anything (as long as it's an integer).
+
+What if that something 
+
+
 
 So that's very similar to what we're doing when we were setting up our functions to return 1 for the "good" x and 0 for every "bad" x. And it's even *more* similar when we multiply the stuff inside those functions so that instead of returning 1 they return something like 7 or 11.
 
