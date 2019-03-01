@@ -721,9 +721,24 @@ So what's that something?
 
 Well, it can be anything (as long as it's an integer).
 
-What if that something 
+The fact that we're multiplying it by 5 means it can't possibly affect our answer in terms of 5.
 
+## Flashback
 
+The same way that up above, we were "deactivating" our fractions by multiplying our numerators by 0 (when X was something we hated). That way, we could multiply our "deactivated" fractions by anything at all, because that 0 was going to guarantee our being immune from any effects. 
+
+function = (the Y we want from 2) * (a fraction that is zero for any X other than 2)
+
++
+
+(the Y we want from 5) * (a fraction that is zero for any X other than 5)
+
++
+...
+
+See how that's similar to the Chinese Remainder puzzle? 
+
+answer = (some multiple of 5) + (something that will give us the remainder we want for 5)
 
 So that's very similar to what we're doing when we were setting up our functions to return 1 for the "good" x and 0 for every "bad" x. And it's even *more* similar when we multiply the stuff inside those functions so that instead of returning 1 they return something like 7 or 11.
 
