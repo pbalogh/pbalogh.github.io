@@ -3,6 +3,10 @@ layout: post
 title: Polynomials
 published: true
 ---
+---
+layout: post
+title: Polynomials, Part 1
+---
 My goal with this post is to get you to say this as often as possible:
 
 > No kidding, dumbass!
