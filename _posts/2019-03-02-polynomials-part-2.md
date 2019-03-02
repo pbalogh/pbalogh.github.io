@@ -1,5 +1,7 @@
 ---
 published: true
+layout: post
+title: 'Polynomials, Part 2'
 ---
 ## Get to the Point
 
