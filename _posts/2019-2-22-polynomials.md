@@ -213,4 +213,4 @@ $$(2 - 5)$$
 
 There they are -- both of them in the same place.
 
-[Part 2](https://pbalogh.github.io/Polynomials_part_2/)
+[Part 2]{{ site.baseurl }}{% link _posts/2019-03-02-polynomials-part-2.md %}
