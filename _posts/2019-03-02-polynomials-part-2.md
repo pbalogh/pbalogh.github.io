@@ -398,7 +398,7 @@ $$\frac{7x - 35}{-3} + \frac{11x - 22}{3}$$
 
 Well, the denominators are different (-3 and 3) but we could multiply one of those fractions by $$\frac{-1)}{-1}$$ and solve that. 
 
-(Remember that you can multiply any number by 1 without changing it, and that another way of saying "1" is any fraction that has $$\frac{something}{itself}$$.
+(Remember that you can multiply any number by 1 without changing it, and that another way of saying "1" is any fraction that has $$\frac{something}{that same something}$$.
 
 So let's switch our fractions around:
 
