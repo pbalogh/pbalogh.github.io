@@ -1,10 +1,6 @@
 ---
 published: true
 ---
----
-layout: post
-title: Polynomials, Part 2
----
 ## Get to the Point
 
 It turns out what we've been describing is a set of points. Wait, what?
