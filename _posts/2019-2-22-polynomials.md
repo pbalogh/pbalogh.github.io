@@ -213,4 +213,4 @@ $$(2 - 5)$$
 
 There they are -- both of them in the same place.
 
-[Part 2]{{ site.baseurl }}{% link _posts/2019-03-02-polynomials-part-2.md %}
+[Let's See Part 2]{{ site.baseurl }}{% link _posts/2019-03-02-polynomials-part-2.md %}
