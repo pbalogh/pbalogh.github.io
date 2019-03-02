@@ -162,7 +162,9 @@ Let's use the same tricks we came up with earlier to find this polynomial:
 
 (x - 2)
 
-Hmm, if we give it 5, we get 3, but we want 1, so we'll do
+We know that'll give us a zero when we give it 2.
+
+But if we give it 5, we get 3, which isn't what we want. We want 1, so we'll do
 
 $$(x - 2)/(5 - 2)$$
 
@@ -224,9 +226,9 @@ What's great about that? Let's say we want to create a polynomial that gives us 
 (5, 11)
 (2, 7)
 
-We could take the first one (the 5 one) and multiply it by 11.
+We could take the first one we made up above (the polynomial that takes a 5 and gives us a 1) and multiply it by 11.
 
-We could take the second one (the 2 one) and multiply it by 7).
+We could take the second one (the polynomial that takes a 2 and gives us a 1) and multiply it by 7).
 
 What would we get if we took the first one (the 5 one, that we multiplied by 11) and gave it 5?
 
@@ -250,11 +252,11 @@ Remember: **the goal of our combo polynomial is to give us (2, 7) and (5, 11).**
 
 That is, if we give is 2, we get a 7. If we give it 5, we get 11.
 
-If we give it 2, the first part we put in will give us 0 but the second part will give us 7, so we'd get
+If we give it 2, the first polynomial in our combo will give us 0 but the second polynomial will give us 7, so we'd get
 
 0 + 7 = 7
 
-And if we give it 5, the first part will give us 11 but the second part will give us 0, so we'd get 
+And if we give it 5, the first polynomial in our combo will give us 11 but the second part will give us 0, so we'd get 
 
 11 + 0 = 0
 
