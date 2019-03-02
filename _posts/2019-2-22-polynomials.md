@@ -209,4 +209,4 @@ $$(2 - 5)$$
 
 There they are -- both of them in the same place.
 
-[Part 2](https://pbalogh.github.io/blob/master/_posts/2019-03-02-polynomials-2.md)
+[Part 2](https://pbalogh.github.io/Polynomials_part_2/)
