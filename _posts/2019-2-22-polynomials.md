@@ -3,10 +3,6 @@ layout: post
 title: Polynomials
 published: true
 ---
----
-layout: post
-title: Polynomials, Part 1
----
 My goal with this post is to get you to say this as often as possible:
 
 > No kidding, dumbass!
@@ -213,4 +209,4 @@ $$(2 - 5)$$
 
 There they are -- both of them in the same place.
 
-[Part Two](_posts/2019-03-02-polynomials-part-2.md)
+[Part Two](2019-03-02-polynomials-part-2.md)
