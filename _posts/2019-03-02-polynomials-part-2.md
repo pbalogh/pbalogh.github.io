@@ -340,6 +340,8 @@ And add the numbers with x:
 
 $$\frac{13}{3} + \frac{4x}{3}$$
 
+That's our polynomial.
+
 Let's test it. What happens if we give it a 2?
 
 $$\frac{13}{3} + \frac{4 * 2}{3} = \frac{13}{3} + \frac{8}{3} = \frac{21}{3} = 7$$
@@ -352,9 +354,46 @@ It works!
 
 ## But Wait a Minute
 
-You may have noticed that these polynomials are great at dealing with the two numbers we care about --- 2 and 5 -- and not necessarily good at handling anything else.
+You may have noticed that our combo polynomial is great at dealing with the two numbers we care about --- 2 and 5. But how will it do with other numbers?
 
-Also, we waited until we had turned both of them into separate polynomials before we did stuff to them. Could we have done it sooner? 
+To answer that, we have to talk about what we're actually doing, especially if we think of (2, 7) and (5, 11) as points.
+
+We're making a line.
+
+Remember the formula that says y = mx + b?
+
+It's basically what our polynomial is:
+
+$$y = \frac{13}{3} + \frac{4x}{3}$$
+
+We're putting the "mx" part later instead of earlier, but that's a trivial change.
+
+And common sense will tell you that a formula including two points has to be a line.
+
+Of course, a line also includes all the points *between* those two points, and extends beyond those two points on either side as well.
+
+Let's see what happens if we give it a number between 2 and 5.
+
+
+
+
+
+
+
+What if someone added a point to our set that *isn't* on that line? What if they said, "OK, when I give you a 2, you give me a 7. When I give you a 5, you give me an 11. But when I give you a 3, you give me a... 4."
+
+Obviously no straight line can handle that. What we need in this case is a *curve*.
+
+y = mx + b is a polynomial that has $$\mathrm{x}^1 in it. Because the biggest exponent in it is 1, we call it a "first degree polynomial." And it's a line.
+
+For a polynomial to curve, it needs to be a degree 2 (or higher!) polynomial. 
+
+
+
+
+## Another Way to Multiply a Polynomial
+
+Earlier, we waited until we had turned both of our zero-or-one fraction-thingies into polynomials before we multiplied them to get bigger numbers than 1. Could we have done it sooner? 
 
 Remember, we multiplied the 2-will-give-us-1 polynomial by 7.
 
