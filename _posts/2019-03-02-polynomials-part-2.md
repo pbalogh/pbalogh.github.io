@@ -128,6 +128,10 @@ In fact, it's so self-evident what to do, we could just leave x out of our polyn
 
 Remember how I earlier gave a "simple" description of a polynomial as "numbers, plus some amount of x values, plus some kind of higher exponents (optional) of x"? Well, technically speaking, the "numbers" part is really "numbers * $$\mathrm{x}^0$$" and the "some amount of x values" is really "some number * $$\mathrm{x}^1$$". Which means a polynomial is really nothing but "number * x-raised-to-some-exponent plus number * x-raised-to-that-exponent-plus-one" and so on. Which is harder to say, maybe, but is obviously simpler -- since in a sense, you're just adding up a list of things, and everything in that list is just a number times x raised to an exponent that also happens to be that x term's position in the list!
 
+So we never need to say what the exponent is when we write out polynomial out as a list, and the "x" part is completely taken for granted. All we need are the coefficients -- the numbers we multiply each x-term by.
+
+[15, 2, 3]
+
 This is a really lean and elegant way to describe a complicated thing more simply.
 
 ## End of One Minute Digression
