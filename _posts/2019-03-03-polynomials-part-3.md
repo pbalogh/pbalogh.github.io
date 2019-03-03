@@ -15,16 +15,37 @@ Here are the four steps from last time:
 
 4. And add them.
 
+### Step 1
+
 Here's our 5 function, that produces (5, 1) and 2, 0):
 
 $$\frac{x - 2}{5 - 2}$$
+
+(Again, we start with our "zero case": "How can we get a zero when we need a zero?")
 
 Let's make it a polynomial:
 
 $$\frac{-2}{3} + \frac{x}{3}$$
 
+We'll call it "our 5-function" for now, but just remember that it also returns 0 when we give it 2.
 
-Now let's multiply it by 11:
+
+
+OK, let's look at our 2 function, that produces (2, 1) and (5, 0):
+
+$$\frac{x - 5}{2 - 5}$$
+
+Let's turn it into a polynomial:
+
+$$\frac{-5}{-3} + \frac{x}{-3}$$
+
+Cleaned up:
+
+$$\frac{5}{3} - \frac{x}{3}$$
+
+### Step 2
+
+Now let's multiply our 5-function by 11:
 
 $$\frac{-22}{3} + \frac{11x}{3}$$
 
@@ -40,19 +61,9 @@ $$\frac{-22}{3} + \frac{11 * 5}{3} = \frac{-22}{3} + \frac{55}{3} = \frac{33}{3}
 
 Succcess!
 
-OK, let's look at our 2 function, that produces (2, 1) and (5, 0):
+### Step 3
 
-$$\frac{x - 5}{2 - 5}$$
-
-Let's turn it into a polynomial:
-
-$$\frac{-5}{-3} + \frac{x}{-3}$$
-
-Cleaned up:
-
-$$\frac{5}{3} - \frac{x}{3}$$
-
-...and then let's multiply it by 7:
+And let's multiply our 2-function by 7:
 
 $$\frac{35}{3} - \frac{7x}{3}$$
 
@@ -64,6 +75,7 @@ And when we give it a 5, we should get 0:
 
 $$\frac{35}{3} - \frac{7 * 5}{3}  =  \frac{35}{3} - \frac{35}{3} = \frac{0}{3} = 0$$
 
+### Step 4
 
 So when we add them together, does it work? 
 
@@ -94,6 +106,8 @@ And if we give it a 5?
 $$\frac{13}{3} + \frac{4 * 5}{3} = \frac{13}{3} + \frac{20}{3} = \frac{33}{3} = 11$$
 
 It works!
+
+
 
 ## But Wait a Minute
 
