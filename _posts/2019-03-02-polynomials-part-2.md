@@ -280,4 +280,6 @@ So let's do these steps:
 
 4. And add them.
 
+Let's do this in [Part 3!](2019-03-03-polynomials-part-3.md)
+
 
