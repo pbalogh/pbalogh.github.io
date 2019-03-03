@@ -31,7 +31,7 @@ So all we need to do is come up with some function that gives us 1s when we want
 
 Were you wondering when I'd get back to these? Me, too. 
 
-Anyway, remember that a polynomial is numbers plus some amount of x values plus some kind of exponents (maybe) of x.
+Anyway, remember that a polynomial is: numbers, plus some amount of x values, plus some kind of higher exponents (optional) of x.
 
 $$15 + 2x$$ 
 
@@ -39,7 +39,7 @@ is a good example of a polynomial.
 
 $$15 + 2x + 3\mathrm{x}^2$$
 
-is another good example, but we don't even need exponents yet.
+is another good example, but we don't even need exponents bigger than 1 yet.
 
 One great thing about polynomials is that just by looking at them you can tell that if someone gave you an x, you could give them a number. It's an obvious mathematical formula to get one and only one answer. Airtight.
 
@@ -123,6 +123,10 @@ In fact, it's so self-evident what to do, we could just leave x out of our polyn
 ...and since programmers think the first item in any list is at Position Zero, this means...
 
 ...any programmer would say "The element at position 0 is 15, so we'll multiply it by $$\mathrm{x}^0$$. The element at position 1 is 2, so we'll multiply it by $$\mathrm{x}^1$$. The element at position 2 is 2, so we'll multiply it by $$\mathrm{x}^1$$. And so on."
+
+### Simple Wasn't Simple Enough
+
+Remember how I earlier gave a "simple" description of a polynomial as "numbers, plus some amount of x values, plus some kind of higher exponents (optional) of x"? Well, technically speaking, the "numbers" part is really "numbers * $$\mathrm{x}^0$$" and the "some amount of x values" is really "some number * $$\mathrm{x}^1$$". Which means a polynomial is really nothing but "number * x-raised-to-some-exponent plus number * x-raised-to-that-exponent-plus-one" and so on. Which is harder to say, maybe, but is obviously simpler -- since in a sense, you're just adding up a list of things, and everything in that list is just a number times x raised to an exponent that also happens to be that x term's position in the list!
 
 This is a really lean and elegant way to describe a complicated thing more simply.
 
